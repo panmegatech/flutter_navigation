@@ -18,6 +18,7 @@ lib/
 ├── bee_screen.dart             # Screen showing Bee details
 ├── cat_screen.dart             # Screen showing Cat details
 ├── page_not_found_screen.dart  # Screen showing the page not found (404) when then push named function error
+├── app_router.dart             # It defines a centralized routing system using the `onGenerateRoute` function
 ├── utils/
 │   └── route_name.dart         # Define all of route name
 │   └── utils.dart              # Helper function
@@ -97,6 +98,26 @@ onGenerateRoute: (RouteSettings settings) {
     return null;
 }
 ```
+
+
+## app_router.dart
+
+The `app_router.dart` file is responsible for handling all the route management in the application. It defines a centralized routing system using the `onGenerateRoute` function, allowing you to manage navigation logic efficiently in one place.
+
+### Key Features:
+- **Centralized Route Management**: All routes are defined in one file, making it easy to manage and modify routes as needed.
+- **Dynamic Route Handling**: The `generateRoute` function dynamically generates routes based on the `RouteSettings` provided by the Navigator.
+- **Error Handling**: It includes a fallback route for unknown paths, ensuring that invalid routes are properly managed.
+- **Middleware Support**: You can easily integrate middlewares (e.g., authentication checks) before navigating to certain pages.
+
+### Example Usage:
+In the `MaterialApp`, the `onGenerateRoute` is set to use the `AppRouter` class to manage navigation:
+```dart
+MaterialApp(
+  onGenerateRoute: AppRouter.generateRoute,
+  initialRoute: '/',
+);
+
 
 
 
