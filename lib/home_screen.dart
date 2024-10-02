@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_navigation/ant_screen.dart';
 import 'package:flutter_navigation/utils/route_name.dart';
 import 'package:flutter_navigation/utils/utils.dart';
-import 'package:flutter_navigation/widgets/custom_scafold.dart';
+import 'package:flutter_navigation/widgets/custom_scaffold.dart';
 import 'package:flutter_navigation/widgets/custom_text.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScafold(
+    return CustomScaffold(
       children: [
         const CustomText('HomeScreen'),
         const SizedBox(

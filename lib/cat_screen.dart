@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigation/widgets/custom_scafold.dart';
+import 'package:flutter_navigation/widgets/custom_scaffold.dart';
 import 'package:flutter_navigation/widgets/custom_text.dart';
 
 class CatScreen extends StatelessWidget {
@@ -7,7 +7,7 @@ class CatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScafold(
+    return CustomScaffold(
       children: [
         const CustomText('CatScreen'),
         const SizedBox(

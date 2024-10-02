@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigation/widgets/custom_scafold.dart';
+import 'package:flutter_navigation/widgets/custom_scaffold.dart';
 import 'package:flutter_navigation/widgets/custom_text.dart';
 
 class BeeScreen extends StatelessWidget {
@@ -7,7 +7,7 @@ class BeeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScafold(
+    return const CustomScaffold(
       children: [
         CustomText('BeeScreen'),
       ],
